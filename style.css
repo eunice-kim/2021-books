@@ -1,0 +1,65 @@
+* {
+  box-sizing:border-box;
+}
+
+html, body {
+  padding: 0;
+  margin: 0;
+  font-family: "helvetica neue", helvetica, sans-serif;
+}
+
+.container {
+  display:flex;
+  flex-flow: row nowrap;
+}
+
+#title {
+  height:5vh;
+  font-size:5vh;
+  text-transform:uppercase;
+}
+
+#hide-nav-scroll {
+  overflow:hidden;
+}
+
+#nav {
+  overflow:scroll;
+  width:40vw;
+  height:94vh;
+  padding-right:5vw;
+}
+
+  ol {
+    margin:0;
+    padding-top: 1vh;
+  }
+
+  .book, .film {
+    font-size:3vmin;
+    text-transform:capitalize;
+  }
+
+  .book:hover {
+    color:red;
+  }
+
+  .film:hover {
+    color:blue;
+  }
+
+#content {
+  width:100%;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+  img {
+    height:45vmin;
+    display:none;
+  }
+
+.show {
+  display:flex !important;
+}
